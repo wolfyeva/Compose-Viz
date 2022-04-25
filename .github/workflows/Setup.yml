@@ -31,5 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Setup docker-compose
-        uses: KengoTODA/actions-setup-docker-compose@v1.0.9
+        uses: KengoTODA/actions-setup-docker-compose@main
+        with:
+            version: '1.29.2'
 
