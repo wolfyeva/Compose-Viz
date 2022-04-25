@@ -46,6 +46,7 @@ jobs:
         run: |
           pip install pytest
           pip install pytest-cov
+          python3 compose-viz.py docker-compose.yaml
           pytest src/test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html   
           
       #- name: Install dependencies
