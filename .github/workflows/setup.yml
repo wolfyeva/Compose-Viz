@@ -43,7 +43,7 @@ jobs:
         with:
           schema-file: schema.yaml
           test-file: testfiles
-          strict: "strict"
+          strict: "nonstrict"
       - name: Test with pytest
         #working-directory: src/
         run: |
