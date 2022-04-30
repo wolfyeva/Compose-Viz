@@ -5,8 +5,8 @@ services:
       - front-tier
       - back-tier
 
-  monitoring123:
-    image: awesome/monitoring
+  monitoring:
+    image123: awesome/monitoring
     networks:
       - admin
     
