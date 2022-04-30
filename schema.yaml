@@ -1,4 +1,4 @@
-version: any(num(min=2.0, max=2.4, required=False),num(min=3.0, max=3.8, required=False))
+version: any(num(min=2.0, max=2.4, required=False),num(min=3.0, max=3.9, required=False))
 services: include('service')
 
 ---
