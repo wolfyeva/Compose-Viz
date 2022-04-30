@@ -37,13 +37,20 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.10.4
+      - name: Yamale test
+        id: folder
+        uses: eXpire163/yamale-docker-action@main
+        with:
+          schema-file: "schema.yaml"
+          test-file: "testfiles"
+          strict: "strict"
       - name: Test with pytest
         #working-directory: src/
         run: |
           pip install pytest
           pip install pytest-cov
-          python3 compose-viz.py docker-compose.yaml
-          pytest src/test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html   
+          python3 compose-viz.py testfiles/docker-compose.yaml
+        # pytest src/test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html   
           
       #- name: Install dependencies
        # run: |
