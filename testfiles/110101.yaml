@@ -5,7 +5,7 @@ services:
       - front-tier
       - back-tier
 
-  monitoring:
+  monitoring123:
     image: awesome/monitoring
     networks:
       - admin
