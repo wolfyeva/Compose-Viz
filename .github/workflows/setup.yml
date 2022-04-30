@@ -38,11 +38,11 @@ jobs:
         with:
           python-version: 3.10.4
       - name: Yamale test
-        id: folder
+        #id: folder
         uses: eXpire163/yamale-docker-action@main
         with:
-          schema-file: "../../schema.yaml"
-          test-file: "../../testfiles"
+          schema-file: ./schema.yaml
+          test-file: ./testfiles
           strict: "strict"
       - name: Test with pytest
         #working-directory: src/
