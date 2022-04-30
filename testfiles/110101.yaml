@@ -6,7 +6,7 @@ services:
       - back-tier
 
   monitoring:
-    image123: awesome/monitoring
+    image: awesome/monitoring
     networks:
       - admin
     
