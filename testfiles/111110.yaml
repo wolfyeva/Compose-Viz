@@ -14,7 +14,7 @@ services:
         volume:
           nocopy: true
       - type: bind
-        source: /var/run/postgres/postgres.sock
+        source123: /var/run/postgres/postgres.sock
         target: /var/run/postgres/postgres.sock
     depends_on:
       - monitoring
