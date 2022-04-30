@@ -6,8 +6,14 @@
 - [The Compose Specification](https://github.com/compose-spec/compose-spec/blob/master/spec.md)
 ### src/test.py
 To run Yamale (yaml validator).
-### testfiles/docker-compose.yaml
-[source]()
+### testfiles/
+1. Links
+2. Volumes
+3. Dependencies (Depende_on)
+4. Ports
+5. Extends
+6. Networks
+e.g 100000.yaml -> only links
 ### .github/workflows/setup.yml
 Building the CI.
 Job:
