@@ -38,7 +38,37 @@ jobs:
         with:
           python-version: 3.10.4
       - name: Docker Compose Config
-        run: docker-compose -f testfiles/111110.yaml config -q
+        run: docker-compose -f testfiles/100000.yaml config -q |
+             docker-compose -f testfiles/100001.yaml config -q |
+             docker-compose -f testfiles/100010.yaml config -q |
+             docker-compose -f testfiles/100011.yaml config -q |
+             docker-compose -f testfiles/100100.yaml config -q |
+             docker-compose -f testfiles/100101.yaml config -q |
+             docker-compose -f testfiles/100110.yaml config -q |
+             docker-compose -f testfiles/100111.yaml config -q |
+             docker-compose -f testfiles/101000.yaml config -q |
+             docker-compose -f testfiles/101001.yaml config -q |
+             docker-compose -f testfiles/101010.yaml config -q |
+             docker-compose -f testfiles/101011.yaml config -q |
+             docker-compose -f testfiles/101100.yaml config -q |
+             docker-compose -f testfiles/101101.yaml config -q |
+             docker-compose -f testfiles/101110.yaml config -q |
+             docker-compose -f testfiles/101111.yaml config -q |
+             docker-compose -f testfiles/110000.yaml config -q |
+             docker-compose -f testfiles/110001.yaml config -q |
+             docker-compose -f testfiles/110010.yaml config -q |
+             docker-compose -f testfiles/110011.yaml config -q |
+             docker-compose -f testfiles/110100.yaml config -q |
+             docker-compose -f testfiles/110101.yaml config -q |
+             docker-compose -f testfiles/110110.yaml config -q |
+             docker-compose -f testfiles/110111.yaml config -q |
+             docker-compose -f testfiles/111000.yaml config -q |
+             docker-compose -f testfiles/111001.yaml config -q |
+             docker-compose -f testfiles/111010.yaml config -q |
+             docker-compose -f testfiles/111011.yaml config -q |
+             docker-compose -f testfiles/111100.yaml config -q |
+             docker-compose -f testfiles/111101.yaml config -q |
+             docker-compose -f testfiles/111110.yaml config -q 
       - name: Test with pytest
         #working-directory: src/
         run: |
