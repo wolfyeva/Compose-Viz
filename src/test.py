@@ -1,4 +1,3 @@
 import os
 import sys
-a=sys.argv[1]
-os.system("docker-compose -f "+a+" config -q")
+os.system("docker-compose -f "+sys.argv[1]+" config -q")
