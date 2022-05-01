@@ -1,3 +1,3 @@
 import os
 import sys
-os.system("docker-compose -f "+sys.argv[1]+" config -q")
+os.system("docker-compose -f "+sys.argv[1]+" config")
