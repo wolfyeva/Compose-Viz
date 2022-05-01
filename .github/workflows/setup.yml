@@ -39,6 +39,37 @@ jobs:
           python-version: 3.10.4
       - name: Docker Compose Config
         run: |
+          docker-compose -f testfiles/000001.yaml config -q
+          docker-compose -f testfiles/000010.yaml config -q
+          docker-compose -f testfiles/000011.yaml config -q
+          docker-compose -f testfiles/000100.yaml config -q
+          docker-compose -f testfiles/000101.yaml config -q
+          docker-compose -f testfiles/000110.yaml config -q
+          docker-compose -f testfiles/000111.yaml config -q
+          docker-compose -f testfiles/001000.yaml config -q
+          docker-compose -f testfiles/001001.yaml config -q
+          docker-compose -f testfiles/001010.yaml config -q
+          docker-compose -f testfiles/001011.yaml config -q
+          docker-compose -f testfiles/001100.yaml config -q
+          docker-compose -f testfiles/001101.yaml config -q
+          docker-compose -f testfiles/001110.yaml config -q
+          docker-compose -f testfiles/001111.yaml config -q
+          docker-compose -f testfiles/010000.yaml config -q
+          docker-compose -f testfiles/010001.yaml config -q
+          docker-compose -f testfiles/010010.yaml config -q
+          docker-compose -f testfiles/010011.yaml config -q
+          docker-compose -f testfiles/010100.yaml config -q
+          docker-compose -f testfiles/010101.yaml config -q
+          docker-compose -f testfiles/010110.yaml config -q
+          docker-compose -f testfiles/010111.yaml config -q
+          docker-compose -f testfiles/011000.yaml config -q
+          docker-compose -f testfiles/011001.yaml config -q
+          docker-compose -f testfiles/011010.yaml config -q
+          docker-compose -f testfiles/011011.yaml config -q
+          docker-compose -f testfiles/011100.yaml config -q
+          docker-compose -f testfiles/011101.yaml config -q
+          docker-compose -f testfiles/011110.yaml config -q
+          docker-compose -f testfiles/011111.yaml config -q
           docker-compose -f testfiles/100000.yaml config -q
           docker-compose -f testfiles/100001.yaml config -q
           docker-compose -f testfiles/100010.yaml config -q
