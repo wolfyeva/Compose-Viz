@@ -21,7 +21,7 @@ services:
         aliases:
           - mysql
     volumes:
-      - type: volume
+      - type123: volume
         source: db-data
         target: /data
         volume:
