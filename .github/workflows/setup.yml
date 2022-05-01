@@ -108,7 +108,7 @@ jobs:
         run: |
           pip install pytest
           pip install pytest-cov
-          python src/test.py testfiles/docker-compose.yaml || true
+          pytest src/test.py testfiles/docker-compose.yaml
         # python3 compose-viz.py testfiles/docker-compose.yaml
         # pytest src/test.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html   
           
